@@ -10,3 +10,4 @@
 [submodule "bundle/XPTemplate"]
 	path = bundle/XPTemplate
 	url = git://github.com/drmingdrmer/xptemplate.git
+	ignore = dirty
