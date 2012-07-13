@@ -1,0 +1,22 @@
+On Windows using a MsysGit for Windows terminal
+
+Installation:
+
+    git clone git://github.com/alantsai/vimConfig.git ~/vimfiles
+
+Create symlinks (create using a cmd):
+
+    mklink /H %Homepath%\_vimrc %Homepath%\vimfiles\_vimrc
+
+Switch to the `~/_vimfiles` directory, and fetch submodules:
+
+    cd ~/_vimfiles
+    git submodule init
+    git submodule update
+
+Update a plugin bundle:
+	cd ~/vimfiles/bundle/pluginYouWantToUpdate
+	git pull origin master
+
+Update all plugin in bundle:
+	git submodule foreach git pull origin master
