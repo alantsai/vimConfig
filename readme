@@ -8,7 +8,7 @@ Create symlinks (create using a cmd):
 
     mklink /H %Homepath%\_vimrc %Homepath%\vimfiles\_vimrc
 
-Switch to the `~/_vimfiles` directory, and fetch submodules:
+Switch to the `~/vimfiles` directory, and fetch submodules:
 
     cd ~/_vimfiles
     git submodule init
