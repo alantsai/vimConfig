@@ -24,5 +24,5 @@ Update all plugin in bundle:
 
 Extra info on SnipMate
 	I have forked the SnipMate so I can create my own snippets in trackable manner.
-	The remote name Origin points to my for, where the Upstream point to the original author.
+	The remote name Origin points to my forked, where the Upstream point to the original author.
 	Use Upstream to receive update and my Origin for my own snippets customation purpose.
