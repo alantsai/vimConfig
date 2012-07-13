@@ -7,3 +7,6 @@
 [submodule "bundle/Surround"]
 	path = bundle/Surround
 	url = git://github.com/tpope/vim-surround.git
+[submodule "bundle/XPTemplate"]
+	path = bundle/XPTemplate
+	url = git://github.com/drmingdrmer/xptemplate.git
