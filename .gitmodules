@@ -1,3 +1,6 @@
 [submodule "bundle/SnipMate"]
 	path = bundle/SnipMate
 	url = git://github.com/msanders/snipmate.vim.git
+[submodule "bundle/EasyMotion"]
+	path = bundle/EasyMotion
+	url = git://github.com/Lokaltog/vim-easymotion.git
