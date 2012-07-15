@@ -126,26 +126,6 @@ set ambiwidth=double "this allow puncuation such as quote (") to show two space.
 
 
 
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" vim7.1在windows下的編碼設置。By Huadong.Liu
-"
-" 想使用搜狗輸入法做為我主要的輸入法，但是當選擇以「繁體中文」為
-" 輸出的時候，不知到爲什麽會變成亂碼，去網路上搜索一下，查到了
-" 這設定，試了一下沒有出現亂碼了。
-"
-" 這方法有問題，如果以下設定的話，我使用搜狗輸出的是沒有亂碼，但其他
-" 設定會出現問題，譬如我上面那個set cpoptions+=$就沒有效果了。
-" 因此這編碼設定應該需要我在查一下。
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"set encoding=utf-8
-"set fileencodings=utf-8,chinese,latin-1
-"if has("win32")
-"set fileencoding=chinese
-"else
-"set fileencoding=utf-8
-"endif
-
-""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Below are some bare minimum suggestion by Derek Wyatt
 "
 "From:
@@ -220,4 +200,5 @@ set stl+=[%5.5b][0x%4.4B]		"Shows bytes of a curosr character. Max and Min set t
 set laststatus=2
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set guifont=DejaVu_Sans_Mono:h12:cANSI
+set guifont=DejaVu_Sans_Mono:h11:cANSI
+set guifontwide=NSimSun:h12
