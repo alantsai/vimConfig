@@ -118,7 +118,12 @@ autocmd GUIEnter * set visualbell t_vb=
 
 "Setting so chinese is readable
 "info from: http://edyfox.codecarver.org/html/vim_for_beginners.html
-set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
+set encoding=utf8
+set fileencodings=ucs-bom,utf-8,big5,cp936,gb18030,euc-jp,euc-kr,latin1
+set ambiwidth=double "this allow puncuation such as quote (") to show two space.
+
+
+
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -132,13 +137,13 @@ set fileencodings=ucs-bom,utf-8,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 " 設定會出現問題，譬如我上面那個set cpoptions+=$就沒有效果了。
 " 因此這編碼設定應該需要我在查一下。
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-set encoding=utf-8
-set fileencodings=utf-8,chinese,latin-1
-if has("win32")
-set fileencoding=chinese
-else
-set fileencoding=utf-8
-endif
+"set encoding=utf-8
+"set fileencodings=utf-8,chinese,latin-1
+"if has("win32")
+"set fileencoding=chinese
+"else
+"set fileencoding=utf-8
+"endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "Below are some bare minimum suggestion by Derek Wyatt
@@ -201,12 +206,18 @@ set stl+=[Buf:#%n]\ 			"Buffer number.
 set stl+=%m\ 				"Show Modiffer [+] for changed.
 set stl+=%r\ 				"Attribute [RO] show read only.
 set stl+=%=\ 				"This will make the following value to the right of the status bar.
-set stl+=Line:%l/%L[%p%%]\ 		"Show currentLine / Maximum Line and percentage of file
-set stl+=Col:%3.3v\ 			"Coloum No. pad value using number 0 to fill the space of width, Maximum and minimum set to width of 3.
-set stl+=[%5.5b][0x%4.4B]		"Shows bytes of a curosr character. Max and Min set to 5. Bytes in Hex, prefix with 0x and max/mim width 4.
-					"Reason of setting large width is because of using Unicode value, which is 2 to power of 16.
+set stl+=Line:%l/%L[%p%%]\ 		"Show currentLine / Maximum Line and percentage of file.
+
+set stl+=Col:%3.3v\ 			"Coloum No. pad value using number 0 to fill the space of width,
+					"Maximum and minimum set to width of 3.
+					
+set stl+=[%5.5b][0x%4.4B]		"Shows bytes of a curosr character. Max and Min set to 5. 
+					"Bytes in Hex, prefix with 0x and max/mim width 4.  "Reason of 
+					"setting large width is because of using Unicode value, which is 2 
+					"to power of 16.
 
 " tell VIM to always put a status line in, even if there is only one window
 set laststatus=2
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+set guifont=DejaVu_Sans_Mono:h12:cANSI
