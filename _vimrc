@@ -201,4 +201,8 @@ set laststatus=2
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 set guifont=DejaVu_Sans_Mono:h11:cANSI
-set guifontwide=NSimSun:h12
+
+"The below font has problem when typing chinese. It gave too wide space
+"between each character.
+"set guifontwide=NSimSun:h9:cCHINESEBIG5
+
