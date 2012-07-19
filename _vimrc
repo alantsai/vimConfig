@@ -123,6 +123,7 @@ set fileencodings=ucs-bom,utf-8,big5,cp936,gb18030,euc-jp,euc-kr,latin1
 set ambiwidth=double "this allow puncuation such as quote (") to show two space.
 
 
+set textwidth=115;
 
 
 
