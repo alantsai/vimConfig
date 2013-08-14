@@ -123,7 +123,7 @@ set fileencodings=ucs-bom,utf-8,big5,cp936,gb18030,euc-jp,euc-kr,latin1
 set ambiwidth=double "this allow puncuation such as quote (") to show two space.
 
 
-set textwidth=115;
+"set textwidth=115;
 
 
 
@@ -207,3 +207,6 @@ set guifont=DejaVu_Sans_Mono:h11:cANSI
 "between each character.
 "set guifontwide=NSimSun:h9:cCHINESEBIG5
 
+source $VIMRUNTIME/delmenu.vim
+source $VIMRUNTIME/menu.vim
+language messages zh_CN.utf-8
