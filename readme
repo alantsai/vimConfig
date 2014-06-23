@@ -10,7 +10,7 @@ Create symlinks (create using a cmd):
 
 Switch to the `~/vimfiles` directory, and fetch submodules:
 
-    cd ~/_vimfiles
+    cd ~/vimfiles
     git submodule init
     git submodule update
 
